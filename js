@@ -7,8 +7,8 @@
   "layer": [
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/JiazhouLiu/FIT3179/main/VegaLite/2_symbol_map/js/ne_110m_admin_0_countries.topojson",
-        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+        "url": "https://github.com/zhiquan272/FIT3179/blob/main/ne_110m.json",
+        "format": {"type": "topojson", "feature": "ne_110m"}
       },
       "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
     },
