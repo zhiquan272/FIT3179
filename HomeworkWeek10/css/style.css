@@ -9,3 +9,8 @@
 #vis1 {
     margin-bottom: 20px; /* Adjust the margin as needed to control the spacing between vis1 and vis2 */
 }
+
+body {
+    margin: 0; /* 将body元素的外边距设置为零 */
+}
+
