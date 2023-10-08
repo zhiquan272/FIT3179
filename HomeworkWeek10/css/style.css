@@ -1,16 +1,22 @@
+/* CSS for centering both vis1 and vis2 */
 .center {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
-/* CSS to control the positioning of vis2 */
+/* CSS to control the positioning of vis1 */
 #vis1 {
+    /* Your styles for vis1 here */
     margin-bottom: 20px; /* Adjust the margin as needed to control the spacing between vis1 and vis2 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
-body {
-    margin: 0; /* 将body元素的外边距设置为零 */
+/* CSS for vis2 */
+#vis2 {
+    /* Your styles for vis2 here */
+    margin-top: 20px; /* Adjust the margin as needed to control the spacing between vis1 and vis2 */
 }
-
