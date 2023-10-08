@@ -1,27 +1,18 @@
-/* CSS for centering both vis1 and vis2 */
+/* Remove default margins and padding for the entire page */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the visualizations vertically and horizontally */
 .center {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-/* CSS to control the positioning of vis1 */
+/* CSS to control the positioning of vis2 */
 #vis1 {
-    /* Your styles for vis1 here */
     margin-bottom: 20px; /* Adjust the margin as needed to control the spacing between vis1 and vis2 */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-/* CSS for vis2 */
-#vis2 {
-    /* Your styles for vis2 here */
-    margin-top: 20px; /* Adjust the margin as needed to control the spacing between vis1 and vis2 */
-}
-
-body {
-    margin: 0;
-    padding: 0;
 }
