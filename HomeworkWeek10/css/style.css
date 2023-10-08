@@ -1,3 +1,8 @@
 .center {
     justify-content: center;
 }
+
+/* CSS to control the positioning of vis2 */
+#vis1 {
+    margin-bottom: 20px; /* Adjust the margin as needed to control the spacing between vis1 and vis2 */
+}
