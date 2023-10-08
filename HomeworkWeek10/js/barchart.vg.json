@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": { "text": "GDP of each Countrydddd" },
+    "title": { "text": "GDP of each Country" },
     "data": {
         "url": "https://raw.githubusercontent.com/zhiquan272/FIT3179/main/HomeworkWeek9/Data/2019.csv"
     },
