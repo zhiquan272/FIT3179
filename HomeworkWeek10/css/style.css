@@ -20,3 +20,8 @@
     /* Your styles for vis2 here */
     margin-top: 20px; /* Adjust the margin as needed to control the spacing between vis1 and vis2 */
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
