@@ -2,7 +2,7 @@
     background-color: rgb(198, 134, 49);
     color:white;
     height:95vh;
-    background-image: url("shutterstock_1954316851__1_.png");
+    background-image: url("Data/shutterstock_1954316851__1_.png");
     background-repeat: no-repeat;
     background-size: cover;
     display:flex;
@@ -35,7 +35,7 @@
 .abc {
     color:white;
     height:25vh;
-    background-image: url("images\ \(1\).png");
+    background-image: url("Data/images\ \(1\).png");
     display:flex;
     flex-direction: column;
     align-items:center;
