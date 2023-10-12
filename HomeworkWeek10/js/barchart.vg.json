@@ -1,5 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
     "title": { "text": "GDP of each Country" },
     "data": {
         "url": "https://raw.githubusercontent.com/zhiquan272/FIT3179/main/HomeworkWeek9/Data/2019.csv"
@@ -9,7 +10,7 @@
         "name"  :   "Score_range",
         "bind"  : {          
           "input"  :   "select"  ,          
-          "options"  : [    
+          "options"  : [  
             "2-3",
             "3-4",
             "4-5",
@@ -22,6 +23,9 @@
       }  
     ],  
     "transform": [      {
+            "filter": "datum.Score >= 0"
+        },
+        {
             "calculate": "split(Score_range, '-')[0]",
             "as": "min_score"
         },
@@ -30,7 +34,7 @@
             "as": "max_score"
         },
         {
-            "filter": "Score_range === 'All' || datum.Score >= datum.min_score && datum.Score < datum.max_score"
+            "filter": "Score_range === 'All' || (datum.Score >= datum.min_score && datum.Score < datum.max_score)"
         }],
     "layer": [ 
         {
@@ -40,7 +44,7 @@
                         "labelAngle": 45
                     }
                 },
-                "y": { "field": "GDP_per_capita", "type": "quantitative", "title": "GDP per capita" },
+                "y": { "field": "GDP_per_capita", "type": "quantitative", "title": "GDP per capita","scale":{"domain":[0,2]}},
                 "order": { "field": "GDP_per_capita", "type": "quantitative", "sort": "descending" },
                 "tooltip": [
                     { "field": "Country", "type": "nominal", "title": "Country" },
