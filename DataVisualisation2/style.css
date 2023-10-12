@@ -1,0 +1,73 @@
+.new{
+    background-color: rgb(198, 134, 49);
+    color:white;
+    height:95vh;
+    background-image: url("shutterstock_1954316851__1_.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+.new h1{
+    font-size:60px;
+    font-weight: bold;
+}
+
+.new a{
+    color:black;
+    text-decoration:none;
+    border: 1px solid #ACACAC;
+    padding: 10px 20px;
+    border-radius:5px;
+}
+
+.new li{
+    display:inline;
+    margin-right:1vw;
+}
+
+.new blockquote{
+    color:white;
+}   
+
+.abc {
+    color:white;
+    height:25vh;
+    background-image: url("images\ \(1\).png");
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.abc h1{
+    font-size:35px;
+    font-weight: bold;
+}
+
+.abc li{
+    display:inline;
+    margin-right:1vw;
+}
+
+.abc a{
+    color:white;
+    text-decoration:none;
+    border: 1px solid #ACACAC;
+    padding: 10px 20px;
+    border-radius:5px;
+}
+
+body .choropleth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+main {
+    text-align: center; /* Center the content within the main element */
+}
