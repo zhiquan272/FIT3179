@@ -3,7 +3,7 @@
     "height": 200,
     "title": { "text": "Healthy Life Expectancy of each Country" },
     "data": {
-        "url": "https://raw.githubusercontent.com/zhiquan272/FIT3179/main/DataVisualisation2/Data/2018.csv"
+        "url": "https://raw.githubusercontent.com/zhiquan272/FIT3179/main/DataVisualisation2/Data/2017.csv"
     },
     "params"  : [    
       {        
