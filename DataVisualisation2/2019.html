@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="all">
 </head>
 <header>
     <h1>World Happiness 2019</h1>
@@ -58,13 +58,13 @@ var vg1 = "js/choroplethmap2019.vg.json";
 var vg2 = "js/GDPbarchart2019.vg.json";
 var vg3 = "js/Healthybarchart2019.vg.json";
 var vg4 = "js/Freedombarchart2019.vg.json";
-vegaEmbed("#choropleth_map",vg1).then(function (result){
+vegaEmbed("#choropleth_map2019",vg1).then(function (result){
 }).catch(console.error);
-vegaEmbed("#GDPbarchart",vg2).then(function (result){
+vegaEmbed("#GDPbarchart2019",vg2).then(function (result){
 }).catch(console.error);
-vegaEmbed("#Healthybarchart",vg3).then(function (result){
+vegaEmbed("#Healthybarchart2019",vg3).then(function (result){
 }).catch(console.error);
-vegaEmbed("#Freedombarchart",vg4).then(function (result){
+vegaEmbed("#Freedombarchart2019",vg4).then(function (result){
 }).catch(console.error);
 </script>
 
