@@ -3,44 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Happiness 2019</title>
+    <title>hii</title>
     <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
-    <link rel="stylesheet" href="css/style.css" media="all">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <main>
-    <section class="abc">
+<header>
     <h1>World Happiness 2019</h1>
     <ul>
         <li><a href="#">2015</a></li>
         <li><a href="#">2016</a></li>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="home.html">Home</a></li>
         <li><a href="#">2017</a></li>
-        <li><a href="#">2018</a></li>
-    </ul>
+        <li><a href="2018.html">2018</a></li>
+     </ul>
+</header>
+
+<body>
+    <main>
+    <section class="choropleth">
+        <h2><span class="brown">Happiness Score</span> of Each <span class="blue">Country</span></h2>
+        <div id="choropleth_map2019"></div>
+    </section>
+    <section class="content">
+        <p>The map above displays the <span class="brown">Happiness Scores</span> for each <span class="blue">country</span>. Darker colors represent higher <span class="brown">Happiness Scores</span>, such as <span class="blue">Australia</span>, <span class="blue">the United States</span>, <span class="blue">Canada</span>, and <span class="blue">Finland</span>. Gray indicates data absence, as seen in some <span class="blue">Middle Eastern countries</span>, <span class="blue">Greenland</span>, and <span class="blue">Antarctica</span>, where no relevant data is available.</p>
     </section>
     <section class="choropleth">
-        <div id="choropleth_map"></div>
+        <h2><span class="red">GDP</span> of Each <span class="blue">Country</span></h2>
+        <div id="GDPbarchart2019"></div>
+    </section>
+    <section class="content">
+        <p>The bar chart above displays the <span class="red">GDP (Gross Domestic Product)</span> for each <span class="blue">country</span>. <span class="red">Gross Domestic Product (GDP)</span> is a key economic metric that quantifies the total market value of all goods and services produced within a <span class="blue">country</span> and is used to evaluate its economic performance. We categorize <span class="blue">countries</span> based on their <span class="brown">Happiness Scores</span>, and you can filter the display to show <span class="blue">countries</span> within a specific <span class="brown">Happiness Scores</span> range by selecting that range.</p>
     </section>
     <section class="choropleth">
-        <div id="GDPbarchart"></div>
+        <h2><span class="yellow">Healthy Life Expectancy</span> of Each <span class="blue">Country</span></h2>
+        <div id="Healthybarchart2019"></div>
+    </section>
+    <section class="content">
+        <p>The bar chart above displays the <span class="yellow">Healthy Life Expectancy</span> for each <span class="blue">country</span>. <span class="yellow">Healthy Life Expectancy</span> refers to the number of years an individual is expected to live in good health without experiencing significant illness or disability. We categorize <span class="blue">countries</span> based on their <span class="brown">Happiness Scores</span>, and you can filter the display to show <span class="blue">countries</span> within a specific <span class="brown">Happiness Scores</span> range by selecting that range.</p>
     </section>
     <section class="choropleth">
-        <div id="Healthybarchart"></div>
+        <h2><span class="purple">Freedom to make life choice</span> of Each <span class="blue">Country</span></h2>
+        <div id="Freedombarchart2019"></div>
     </section>
-    <section class="choropleth">
-        <div id="Freedombarchart"></div>
+    <section class="content">
+        <p>The bar chart above displays the <span class="purple">Freedom to make life choice</span> for each <span class="blue">country</span>. <span class="purple">"Freedom to make life choices"</span> signifies the liberty for individuals to decide and pursue their personal, professional, and social preferences without significant external restrictions, contributing to personal autonomy and well-being. We categorize <span class="blue">countries</span> based on their <span class="brown">Happiness Scores</span>, and you can filter the display to show <span class="blue">countries</span> within a specific <span class="brown">Happiness Scores</span> range by selecting that range.</p></p>
     </section>
     </main>
     
 <script type="text/javascript">
 
-var vg1 = "js/choroplethmap.vg.json";
-var vg2 = "js/GDPbarchart.vg.json";
-var vg3 = "js/Healthybarchart.vg.json";
-var vg4 = "js/Freedombarchart.vg.json";
+var vg1 = "js/choroplethmap2019.vg.json";
+var vg2 = "js/GDPbarchart2019.vg.json";
+var vg3 = "js/Healthybarchart2019.vg.json";
+var vg4 = "js/Freedombarchart2019.vg.json";
 vegaEmbed("#choropleth_map",vg1).then(function (result){
 }).catch(console.error);
 vegaEmbed("#GDPbarchart",vg2).then(function (result){
@@ -50,5 +67,6 @@ vegaEmbed("#Healthybarchart",vg3).then(function (result){
 vegaEmbed("#Freedombarchart",vg4).then(function (result){
 }).catch(console.error);
 </script>
+
 </body>
 </html>
