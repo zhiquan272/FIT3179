@@ -1,8 +1,6 @@
 .new{
-    background-color: rgb(198, 134, 49);
     color:white;
     height:95vh;
-    background-image: url("Data/shutterstock_1954316851__1_.png");
     background-repeat: no-repeat;
     background-size: cover;
     display:flex;
@@ -25,50 +23,103 @@
 
 .new li{
     display:inline;
-    margin-right:1vw;
+    margin-right:0.5vw;
 }
 
 .new blockquote{
     color:white;
 }   
 
-.abc {
-    background-color: rgb(198, 134, 49);
-    color:white;
-    height:25vh;
-    background-image: url("Data/images\ \(1\).png");
+header {
+    height:80px;
+    background-repeat: no-repeat;
+    background-size: cover;
     display:flex;
     flex-direction: column;
     align-items:center;
     justify-content: center;
+    background-image: url("pexels-miguel-á-padriñán-255379.png");
 
 }
 
-.abc h1{
-    font-size:35px;
-    font-weight: bold;
+header h1{
+    font-size:45px;
+    margin:10px 0;
+    font-family: "Forte";
 }
 
-.abc li{
+header li{
     display:inline;
     margin-right:1vw;
 }
 
-.abc a{
-    color:white;
+header a{
+    color:black;
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration:none;
-    border: 1px solid #ACACAC;
-    padding: 10px 20px;
-    border-radius:5px;
+    margin:10px;
 }
 
-body .choropleth{
+header a:hover {
+    text-decoration: underline;
+}
+
+.choropleth{
+    color:white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    background-image: url("pexels-felix-mittermeier-956999.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
+.choropleth h2{
+    font-size: 20px;
+    margin:0 0 20px 0;
+    font-family: "Comic Sans MS";
+}
 main {
     text-align: center; /* Center the content within the main element */
+}
+
+.content p{
+    font-size:18px;
+    font-family: "Bahnschrift SemiCondensed";
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5em;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.brown {
+    color:rgb(241, 157, 12);
+}
+
+.blue {
+    color:blue;
+}
+
+.red {
+    color:red;
+}
+
+.yellow {
+    color:rgb(194, 194, 22);
+}
+
+.purple {
+    color:purple;
+}
+
+header, section, footer {
+    background-color: #d6ccc2;
+    padding: 30px;
+}
+
+* {
+    margin:2px;
+    padding:0;
 }
