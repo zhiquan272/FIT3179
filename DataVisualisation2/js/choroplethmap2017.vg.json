@@ -1,0 +1,66 @@
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 1000,
+  "height": 450,
+  "projection": {"type": "equalEarth"},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/zhiquan272/FIT3179/main/DataVisualisation2/js/ne_110m_admin_0_countries.topojson",
+        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+      },
+      "transform": [
+        {
+          "lookup": "properties.NAME",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/zhiquan272/FIT3179/main/DataVisualisation2/Data/2017.csv"
+            },
+            "key": "Country",
+            "fields": ["Score"]
+          }
+        },
+        {
+          "calculate": "if(datum.Score === null, 0, datum.Score)",
+          "as": "Score"
+        },
+        {
+          "calculate": "if(datum.Score === 0, 'Data is not available in ' + datum.properties.NAME, datum.Score)",
+          "as": "Tooltip"
+        }
+      ],
+      "mark": {"type": "geoshape", "stroke": "white"},
+      "encoding": {
+        "color": {
+          "field": "Score",
+          "type": "quantitative",
+          "scale": {
+            "type": "linear",
+            "domain": [2, 4, 6, 8],
+            "range": ["#feedde", "#fdbe85", "#e6550d", "#a63603"]
+          },
+          "condition": {"test": "datum.Score === 0", "value": "lightgrey"}
+        },
+        "tooltip": [
+          {"field": "properties.NAME", "type": "nominal", "title": "Country"},
+          {"field": "Tooltip", "type": "nominal", "title": "Happiness Score"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/7_others/oceans.topojson",
+        "format": {"type": "topojson", "feature": "oceans"}
+      },
+      "mark": {"type": "geoshape", "fill": "lightblue"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/2_symbol_map/js/WorldMapWithGraticules.topojson",
+        "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
+      },
+      "mark": {"type": "geoshape", "fill": null, "stroke": "black"}
+    }  
+  ]
+}
