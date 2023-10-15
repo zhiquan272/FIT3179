@@ -52,7 +52,10 @@
                     { "field": "Healthy life expectancy", "type": "quantitative", "title": "Healthy life expectancy" },
                     { "field": "Score", "type":
                     "quantitative", "title": "Happiness Score"}
-                ]
+                ],
+                "color": {
+                  "value": "rgb(194, 194, 22)"
+                }
             }
         },
         {
