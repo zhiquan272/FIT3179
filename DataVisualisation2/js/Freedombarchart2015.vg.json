@@ -52,7 +52,10 @@
               "title": "Freedom to make life choices"
             },
             {"field": "Score", "type": "quantitative", "title": "Happiness Score"}
-          ]
+          ],
+                "color": {
+                  "value": "purple"
+                }
         }
       },
       {
