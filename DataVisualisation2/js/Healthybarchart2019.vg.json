@@ -1,6 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "height": 200,
+    "background":"#d6ccc2",
     "title": { "text": "Healthy Life Expectancy of each Country" },
     "data": {
         "url": "https://raw.githubusercontent.com/zhiquan272/FIT3179/main/DataVisualisation2/Data/2019.csv"
@@ -51,7 +52,10 @@
                     { "field": "Healthy life expectancy", "type": "quantitative", "title": "Healthy life expectancy" },
                     { "field": "Score", "type":
                     "quantitative", "title": "Happiness Score"}
-                ]
+                ],
+                "color": {
+                  "value": "rgb(194, 194, 22)"
+                }
             }
         },
         {
