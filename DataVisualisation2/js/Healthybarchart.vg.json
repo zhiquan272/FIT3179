@@ -1,0 +1,71 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "height": 200,
+    "title": { "text": "Healthy Life Expectancy of each Country" },
+    "data": {
+        "url": "https://raw.githubusercontent.com/zhiquan272/FIT3179/main/DataVisualisation2/Data/2016.csv"
+    },
+    "params"  : [    
+      {        
+        "name"  :   "Score_range",
+        "bind"  : {          
+          "input"  :   "select"  ,          
+          "options"  : [  
+            "2-3",
+            "3-4",
+            "4-5",
+            "5-6",
+            "6-7",
+            "7-8"       
+          ],            
+          "name"  :   "Happiness Score Range: "      
+        }    
+      }  
+    ],  
+    "transform": [      {
+            "filter": "datum.Score >= 0"
+        },
+        {
+            "calculate": "split(Score_range, '-')[0]",
+            "as": "min_score"
+        },
+        {
+            "calculate": "split(Score_range, '-')[1]",
+            "as": "max_score"
+        },
+        {
+            "filter": "Score_range === 'All' || (datum.Score >= datum.min_score && datum.Score < datum.max_score)"
+        }],
+    "layer": [ 
+        {
+            "mark": "bar",
+            "encoding": {
+                "x": { "field": "Country", "type": "nominal", "title": "Country", "axis": {
+                        "labelAngle": 45
+                    }
+                },
+                "y": { "field": "Healthy life expectancy", "type": "quantitative", "title": "Healthy life expectancy","scale":{"domain":[0,1.5]}},
+                "order": { "field": "GDP_per_capita", "type": "quantitative", "sort": "descending" },
+                "tooltip": [
+                    { "field": "Country", "type": "nominal", "title": "Country" },
+                    { "field": "Healthy life expectancy", "type": "quantitative", "title": "Healthy life expectancy" },
+                    { "field": "Score", "type":
+                    "quantitative", "title": "Happiness Score"}
+                ]
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "baseline": "middle", 
+                "align": "center", 
+                "dx": 4 
+            },
+            "encoding": {
+                "x": { "field": "Country", "type": "nominal", "title": "Country" },
+                "y": { "field": "Healthy life expectancy", "type": "quantitative", "title": "Healthy life expectancy" },
+                "text": { "field": "Healthy life expectancy", "type": "quantitative", "format": ".2f" } 
+            }
+        }
+    ]
+}
