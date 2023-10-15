@@ -50,7 +50,7 @@
         "x": {"field": "year", "type": "ordinal"},
       },
       "transform": [
-        {"filter": "datum.year === 2019"}
+        {"filter": "datum.year === 2017"}
       ]
     }
   ]
