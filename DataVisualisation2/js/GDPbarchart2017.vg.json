@@ -51,7 +51,10 @@
                     { "field": "GDP_per_capita", "type": "quantitative", "title": "GDP per Capita" },
                     { "field": "Score", "type":
                     "quantitative", "title": "Happiness Score"}
-                ]
+                ],
+                "color": {
+                  "value": "red"
+                }
             }
         },
         {
