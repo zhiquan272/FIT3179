@@ -25,7 +25,7 @@
           {"field": "Score", "type": "quantitative", "title": "Happiness Score","format":".2f"}
         ],
         "color":{
-          "value":"yellow"
+          "value":"rgb(194, 194, 22)"
         }
       }
     }
