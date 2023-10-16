@@ -12,12 +12,12 @@
         "x": {
           "field": "GDP_per_capita",
           "type": "quantitative",
-          "axis": {"title": "GDP of each country"},
+          "axis": {"title": "GDP of each country"}
         },
         "y": {
           "field": "Score",
           "type": "quantitative",
-          "axis": {"title": "Happiness Score"},
+          "axis": {"title": "Happiness Score"}
         },
         "tooltip": [
           {"field": "Country", "type": "nominal", "title": "Country"},
