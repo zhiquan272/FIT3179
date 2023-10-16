@@ -58,6 +58,14 @@
         <p>The bar chart above displays the <span class="purple">Freedom to make life choice</span> for each <span class="blue">country</span>. <span class="purple">"Freedom to make life choices"</span> signifies the liberty for individuals to decide and pursue their personal, professional, and social preferences without significant external restrictions, contributing to personal autonomy and well-being. We categorize <span class="blue">countries</span> based on their <span class="brown">Happiness Scores</span>, and you can filter the display to show <span class="blue">countries</span> within a specific <span class="brown">Happiness Scores</span> range by selecting that range.</p></p>
     </section>
     </main>
+    <section class="choropleth">
+        <h2><span class="purple">World Population</span></h2>
+        <div id="GDPscatterplot2019"></div>
+    </section>
+    <section class="content">
+        <p>The bar chart above displays the <span class="purple">Freedom to make life choice</span> for each <span class="blue">country</span>. <span class="purple">"Freedom to make life choices"</span> signifies the liberty for individuals to decide and pursue their personal, professional, and social preferences without significant external restrictions, contributing to personal autonomy and well-being. We categorize <span class="blue">countries</span> based on their <span class="brown">Happiness Scores</span>, and you can filter the display to show <span class="blue">countries</span> within a specific <span class="brown">Happiness Scores</span> range by selecting that range.</p></p>
+    </section>
+    </main>
     
 <script type="text/javascript">
 
@@ -66,6 +74,7 @@ var vg2 = "js/GDPbarchart2019.vg.json";
 var vg3 = "js/Healthybarchart2019.vg.json";
 var vg4 = "js/Freedombarchart2019.vg.json";
 var vg5 = "js/Populationlinechart2019.vg.json";
+var vg6 = "js/GDPscatterplot2019.vg.json";
 vegaEmbed("#choropleth_map2019",vg1).then(function (result){
 }).catch(console.error);
 vegaEmbed("#GDPbarchart2019",vg2).then(function (result){
@@ -75,6 +84,8 @@ vegaEmbed("#Healthybarchart2019",vg3).then(function (result){
 vegaEmbed("#Freedombarchart2019",vg4).then(function (result){
 }).catch(console.error);
 vegaEmbed("#Populationlinechart2019",vg5).then(function (result){
+}).catch(console.error);
+vegaEmbed("#GDPscatterplot2019",vg6).then(function (result){
 }).catch(console.error);
 </script>
 
