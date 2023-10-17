@@ -1,5 +1,5 @@
 .new{
-    color:white;
+    color:black;
     height:95vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,6 +21,7 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration:none;
     margin:10px;
+}
 
 .new li{
     display:inline;
@@ -28,10 +29,16 @@
 }
 
 .new blockquote{
-    color:white;
     font-family: "Bahnschrift SemiCondensed";
-    font-size:18px;
+    font-size:20px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
 }   
+
+.new a:hover {
+    text-decoration: underline;
+}
 
 header {
     height:80px;
