@@ -11,19 +11,20 @@
 .new h1{
     font-size:60px;
     font-weight: bold;
+    margin:10px 0;
+    font-family: "Forte";
 }
 
 .new a{
     color:black;
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration:none;
-    border: 1px solid #ACACAC;
-    padding: 10px 20px;
-    border-radius:5px;
-}
+    margin:10px;
 
 .new li{
     display:inline;
-    margin-right:0.5vw;
+    margin-right:1vw;
 }
 
 .new blockquote{
