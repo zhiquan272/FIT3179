@@ -51,13 +51,6 @@
         <p>The bar chart above displays the <span class="purple">Freedom to make life choice</span> for each <span class="blue">country</span>. <span class="purple">"Freedom to make life choices"</span> signifies the liberty for individuals to decide and pursue their personal, professional, and social preferences without significant external restrictions, contributing to personal autonomy and well-being. We categorize <span class="blue">countries</span> based on their <span class="brown">Happiness Scores</span>, and you can filter the display to show <span class="blue">countries</span> within a specific <span class="brown">Happiness Scores</span> range by selecting that range.</p></p>
     </section>
     <section class="choropleth">
-        <h2><span class="purple">World Population</span></h2>
-        <div id="Populationlinechart2019"></div>
-    </section>
-    <section class="content">
-        <p>The bar chart above displays the <span class="purple">Freedom to make life choice</span> for each <span class="blue">country</span>. <span class="purple">"Freedom to make life choices"</span> signifies the liberty for individuals to decide and pursue their personal, professional, and social preferences without significant external restrictions, contributing to personal autonomy and well-being. We categorize <span class="blue">countries</span> based on their <span class="brown">Happiness Scores</span>, and you can filter the display to show <span class="blue">countries</span> within a specific <span class="brown">Happiness Scores</span> range by selecting that range.</p></p>
-    </section>
-    <section class="choropleth">
         <h2>Correlation between <span class="brown">Happiness Score</span> and <span class="red">GDP</span></h2>
         <div id="GDPscatterplot2019"></div>
     </section>
@@ -89,10 +82,9 @@ var vg1 = "js/choroplethmap2019.vg.json";
 var vg2 = "js/GDPbarchart2019.vg.json";
 var vg3 = "js/Healthybarchart2019.vg.json";
 var vg4 = "js/Freedombarchart2019.vg.json";
-var vg5 = "js/Populationlinechart2019.vg.json";
-var vg6 = "js/GDPscatterplot2019.vg.json";
-var vg7 = "js/Freedomscatterplot2019.vg.json";
-var vg8 = "js/Healthyscatterplot2019.vg.json";
+var vg5 = "js/GDPscatterplot2019.vg.json";
+var vg6 = "js/Freedomscatterplot2019.vg.json";
+var vg7 = "js/Healthyscatterplot2019.vg.json";
 vegaEmbed("#choropleth_map2019",vg1).then(function (result){
 }).catch(console.error);
 vegaEmbed("#GDPbarchart2019",vg2).then(function (result){
@@ -101,13 +93,11 @@ vegaEmbed("#Healthybarchart2019",vg3).then(function (result){
 }).catch(console.error);
 vegaEmbed("#Freedombarchart2019",vg4).then(function (result){
 }).catch(console.error);
-vegaEmbed("#Populationlinechart2019",vg5).then(function (result){
+vegaEmbed("#GDPscatterplot2019",vg5).then(function (result){
 }).catch(console.error);
-vegaEmbed("#GDPscatterplot2019",vg6).then(function (result){
+vegaEmbed("#Freedomscatterplot2019",vg6).then(function (result){
 }).catch(console.error);
-vegaEmbed("#Freedomscatterplot2019",vg7).then(function (result){
-}).catch(console.error);
-vegaEmbed("#Healthyscatterplot2019",vg8).then(function (result){
+vegaEmbed("#Healthyscatterplot2019",vg7).then(function (result){
 }).catch(console.error);
 </script>
 
