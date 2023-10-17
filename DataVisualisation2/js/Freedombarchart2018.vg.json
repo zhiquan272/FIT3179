@@ -49,9 +49,9 @@
             {
               "field": "Freedom to make life choices",
               "type": "quantitative",
-              "title": "Freedom to make life choices"
+              "title": "Freedom to make life choices","format":".2f"
             },
-            {"field": "Score", "type": "quantitative", "title": "Happiness Score"}
+            {"field": "Score", "type": "quantitative", "title": "Happiness Score","format":".2f"}
           ],
                 "color": {
                   "value": "purple"
