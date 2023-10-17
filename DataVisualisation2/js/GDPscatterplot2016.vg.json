@@ -12,7 +12,7 @@
         "x": {
           "field": "GDP_per_capita",
           "type": "quantitative",
-          "axis": {"title": "GDP of each country"}
+          "axis": {"title": "GDP"}
         },
         "y": {
           "field": "Score",
