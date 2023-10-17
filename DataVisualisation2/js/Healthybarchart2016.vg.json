@@ -10,7 +10,8 @@
         "name"  :   "Score_range",
         "bind"  : {          
           "input"  :   "select"  ,          
-          "options"  : [  
+          "options"  : [
+            "Choose a range",
             "2-3",
             "3-4",
             "4-5",
