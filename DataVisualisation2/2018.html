@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hii</title>
+    <title>2018</title>
     <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
@@ -79,6 +79,9 @@ var vg1 = "js/choroplethmap2018.vg.json";
 var vg2 = "js/GDPbarchart2018.vg.json";
 var vg3 = "js/Healthybarchart2018.vg.json";
 var vg4 = "js/Freedombarchart2018.vg.json";
+var vg5 = "js/GDPscatterplot2018.vg.json";
+var vg6 = "js/Healthyscatterplot2018.vg.json";
+var vg7 = "js/Freedomscatterplot2018.vg.json";
 vegaEmbed("#choropleth_map2018",vg1).then(function (result){
 }).catch(console.error);
 vegaEmbed("#GDPbarchart2018",vg2).then(function (result){
@@ -87,6 +90,13 @@ vegaEmbed("#Healthybarchart2018",vg3).then(function (result){
 }).catch(console.error);
 vegaEmbed("#Freedombarchart2018",vg4).then(function (result){
 }).catch(console.error);
+vegaEmbed("#GDPscatterplot2018",vg5).then(function (result){
+}).catch(console.error);
+vegaEmbed("#Freedomscatterplot2018",vg6).then(function (result){
+}).catch(console.error);
+vegaEmbed("#Healthyscatterplot2018",vg7).then(function (result){
+}).catch(console.error);
+    
 </script>
 
 </body>
