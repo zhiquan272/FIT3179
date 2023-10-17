@@ -65,7 +65,7 @@ header a:hover {
 }
 
 .choropleth{
-    color:white;
+    color:black;
     display: flex;
     flex-direction: column;
     justify-content: center;
